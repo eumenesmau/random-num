@@ -1,12 +1,12 @@
 import random
 
 num = random.randint(1 ,100) 
-#if guess > 100 and guess < 1:
-#	print('請輸入1-100以內的數字')
-#	SystemExit
+count=0
 while True:
 	guess = input('猜數字遊戲喔~請從1-100以內猜出正確數字:')
 	guess = int(guess)
+	count += 1
+	print('你目前猜了', count, '次了')
 	if guess == num:
 		print('這你也猜得對，太屌了吧!')
 		break
