@@ -1,9 +1,15 @@
 import random
 
-num = random.randint(1 ,100) 
+start = input('請輸入起始範圍:')
+end = input('請輸入結束範圍:')
+start = int(start)
+end = int(end)
+num = random.randint(start, end) 
 count=0
 while True:
-	guess = input('猜數字遊戲喔~請從1-100以內猜出正確數字:')
+	start = str(start)
+	end = str(end)
+	guess = input('猜數字遊戲喔~請從' + start + '-'+ end +'以內猜出正確數字:')
 	guess = int(guess)
 	count += 1
 	print('你目前猜了', count, '次了')
